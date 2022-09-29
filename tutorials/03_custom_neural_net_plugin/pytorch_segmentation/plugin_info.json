@@ -1,0 +1,5 @@
+{
+	"title": "Supervisely Segmentation Neural Network Example",
+	"description": "Example integration of a segmentation neural net into Supervisely framework. All the key integration components are exposed, so while the neural net is implemented in Pytorch, the code can be easily adapted to other frameworks.",
+	"type": "architecture"
+}

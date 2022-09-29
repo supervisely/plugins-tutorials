@@ -1,0 +1,4 @@
+{
+	"title": "Upload local images to Supervisely Instance",
+	"description": "Upload directory with images from hard drive to Supervisely Instance via API"
+}

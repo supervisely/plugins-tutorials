@@ -1,0 +1,4 @@
+{
+	"title": "Guide #14: Save & load pixelwise confidences.",
+	"description": "This example shows how to save NN pixelwise confidences after image segmentation with different inference modes."
+}

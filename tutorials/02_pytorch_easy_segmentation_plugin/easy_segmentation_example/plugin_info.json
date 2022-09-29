@@ -1,0 +1,5 @@
+{
+	"title": "Supervisely PyTorch Easy Segmentation Example",
+	"description": "Example integration of a very simple PyTorch segmentation neural net into Supervisely framework, using helpers specific to Pytorch segmentation models. This example illustrates the minimum amount of work necessary to integrate a custom mode into Supervisely.",
+	"type": "architecture"
+}

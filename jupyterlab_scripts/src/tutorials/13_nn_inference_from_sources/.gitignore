@@ -1,0 +1,7 @@
+data/model_yolo_coco/*
+data/model_unet_lemon/*
+data/model_mask_rcnn_coco/*
+
+!data/model_yolo_coco/.gitkeep
+!data/model_unet_lemon/.gitkeep
+!data/model_mask_rcnn_coco/.gitkeep

@@ -1,0 +1,4 @@
+{
+	"title": "Guide #09: Complex pipeline: detection + segmentation + postprocessing",
+	"description": "Example demonstrates how get predictions from several models, combine them and postprocess"
+}

@@ -1,0 +1,33 @@
+{
+    "description": "",
+    "size": {
+        "height": 1536,
+        "width": 2048
+    },
+    "tags": [],
+    "objects": [
+        {
+            "classTitle": "car",
+            "description": "",
+            "tags": [
+                {
+                    "name": "confidence",
+                    "value": 0.9781
+                }
+            ],
+            "points": {
+                "exterior": [
+                    [
+                        254,
+                        257
+                    ],
+                    [
+                        758,
+                        601
+                    ]
+                ],
+                "interior": []
+            }
+        }
+    ]
+}
