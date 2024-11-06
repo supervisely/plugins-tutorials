@@ -48,7 +48,7 @@ You need to have Docker installed on your machine.
    docker run \
        --rm -ti \
        --network host \
-       -e SERVER_ADDRESS='https://app.supervise.ly' \
+       -e SERVER_ADDRESS='https://app.supervisely.com' \
        -e API_TOKEN='<PASTE YOUR PERSONAL API TOKEN>' \
        -v `pwd`/supervisely/supervisely_lib:/workdir/supervisely_lib \
        -v `pwd`/supervisely/help/jupyterlab_scripts/src:/workdir/src \
