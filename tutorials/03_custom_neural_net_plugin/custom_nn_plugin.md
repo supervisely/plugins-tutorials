@@ -122,7 +122,7 @@ mounts them for the neural net plugin as follows:
 ```
 Let us go over the directories in more detail:
 * `data` contains the training data as a
-  [Supervisely project](https://docs.supervise.ly/import/local_files/supervisely/).
+  [Supervisely project](https://docs.supervisely.com/import/local_files/supervisely/).
   We strongly suggest using our Python SDK (starting from
   `supervisely_lib.project.project` module)to read, parse and transform the
   data instead ofworking with raw JSON files.
