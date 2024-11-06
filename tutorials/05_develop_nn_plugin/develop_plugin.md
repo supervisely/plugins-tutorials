@@ -52,7 +52,7 @@ It contains the following json ([example](https://github.com/supervisely/supervi
 
 
 2. ```README.md``` 
-Some useful information about plugin, that you would like to share with users. [For example](https://supervise.ly/explore/plugins/u-net-v-2-69818/overview): how to run NN, some configs explanation, examples of predition, etc. This information is packed into  docker image to the special label. Docker image building step will be described later.
+Some useful information about plugin, that you would like to share with users. [For example](https://supervisely.com/explore/plugins/u-net-v-2-69818/overview): how to run NN, some configs explanation, examples of predition, etc. This information is packed into  docker image to the special label. Docker image building step will be described later.
 
 
 3. ```Dockerfile``` is used during building docker image ([example](https://github.com/supervisely/supervisely/blob/master/plugins/nn/unet_v2/Dockerfile))
