@@ -91,7 +91,7 @@ docker run --rm -it \
 There are few ways how you can send requests:
 
 1. Using Supervisely Python SDK. A bunch of examples can be founded in Explore->Notebooks. For example: [
-Guide #04: neural network inference](https://supervise.ly/explore/notebooks/guide-04-neural-network-inference-20/overview)
+Guide #04: neural network inference](https://supervisely.com/explore/notebooks/guide-04-neural-network-inference-20/overview)
 
 2. Using CURL and bash (see below)
 
@@ -113,12 +113,12 @@ curl -H "Content-Type: multipart/form-data" -X POST \
 The intuition behind optional fields ```meta``` and ```mode``` is [here](https://github.com/supervisely/supervisely/blob/master/help/jupyterlab_scripts/src/tutorials/09_detection_segmentation_pipeline/detection_segmentation_pipeline.ipynb). Examples are presented in next section.   
 
 ### Inference
-All neural networks in Supervisely support several inference modes: full image, sliding window, region of interest (ROI) and bounding boxes mode. Lear more [here](https://docs.supervise.ly/neural-networks/configs/inference_config/), [here](https://github.com/supervisely/supervisely/blob/master/help/jupyterlab_scripts/src/tutorials/06_inference_modes/inference_modes.ipynb) and [here](https://github.com/supervisely/supervisely/blob/master/help/jupyterlab_scripts/src/tutorials/09_detection_segmentation_pipeline/detection_segmentation_pipeline.ipynb)
+All neural networks in Supervisely support several inference modes: full image, sliding window, region of interest (ROI) and bounding boxes mode. Lear more [here](https://docs.supervisely.com/neural-networks/configs/inference_config/), [here](https://github.com/supervisely/supervisely/blob/master/help/jupyterlab_scripts/src/tutorials/06_inference_modes/inference_modes.ipynb) and [here](https://github.com/supervisely/supervisely/blob/master/help/jupyterlab_scripts/src/tutorials/09_detection_segmentation_pipeline/detection_segmentation_pipeline.ipynb)
 
 
 ### Full image inference
 
-Lets feed the entire image to deployed neural network. Image will be automatically resized to the input resolution of NN. The result will be returned in [Supervisely JSON format](https://docs.supervise.ly/ann_format/).
+Lets feed the entire image to deployed neural network. Image will be automatically resized to the input resolution of NN. The result will be returned in [Supervisely JSON format](https://docs.supervisely.com/ann_format/).
 
 
 CURL template:
@@ -138,7 +138,7 @@ The result is the following:
 
 | Input image              |  Visualized prediction   |
 :-------------------------:|:-------------------------:
-<img src="./images/ties.jpg" width="600"> | <img src="https://app.supervise.ly/h5un6l2bnaz1vj8a9qgms4-public/assets/projects/images/K/x/Tg/fOxYINjPhfmzxUMgtkiLMQvpEIxR8TNNzfHm6h2kJtZ5pSUew8TsC0tvO6JIZqUdq9mOVw0mMctDFTFlrFRsidAF98JfcZ97cjvXHzLjGNwTo60kZ8J7zHeB7FUs.png" width="600">
+<img src="./images/ties.jpg" width="600"> | <img src="https://app.supervisely.com/h5un6l2bnaz1vj8a9qgms4-public/assets/projects/images/K/x/Tg/fOxYINjPhfmzxUMgtkiLMQvpEIxR8TNNzfHm6h2kJtZ5pSUew8TsC0tvO6JIZqUdq9mOVw0mMctDFTFlrFRsidAF98JfcZ97cjvXHzLjGNwTo60kZ8J7zHeB7FUs.png" width="600">
 
 
 
@@ -256,7 +256,7 @@ curl -H "Content-Type: multipart/form-data" -X POST -F "image=@./images/big_imag
 
 | Input image              |  Visualized prediction   |
 :-------------------------:|:-------------------------:
-<img src="https://app.supervise.ly/h5un6l2bnaz1vj8a9qgms4-public/assets/projects/images/J/3/qA/awJVhndwAUgoLdo2eAxO4N7QewaLZjCug44npXfvV4YeJCPkvegRHncOawDcLRoPPPsVox0eDE2imyfsD7s8XORExbPURdHrPnVm4PNIQD321l1ddUlwRhcelSUV.png" width="600"> | <img src="https://app.supervise.ly/h5un6l2bnaz1vj8a9qgms4-public/assets/projects/images/S/p/RV/rb1AAS7dcCiQF2ejRH1HYSDOIRPYtg4JNqa65xS3ioAK2MR0SpdKbvMIPyW2NRFoAVDlAfrKcT6kcTmklUmpY89kUgQVn3w8f04gfdzNGLUJnzGQF1SKpNRi25jN.png" width="600">
+<img src="https://app.supervisely.com/h5un6l2bnaz1vj8a9qgms4-public/assets/projects/images/J/3/qA/awJVhndwAUgoLdo2eAxO4N7QewaLZjCug44npXfvV4YeJCPkvegRHncOawDcLRoPPPsVox0eDE2imyfsD7s8XORExbPURdHrPnVm4PNIQD321l1ddUlwRhcelSUV.png" width="600"> | <img src="https://app.supervisely.com/h5un6l2bnaz1vj8a9qgms4-public/assets/projects/images/S/p/RV/rb1AAS7dcCiQF2ejRH1HYSDOIRPYtg4JNqa65xS3ioAK2MR0SpdKbvMIPyW2NRFoAVDlAfrKcT6kcTmklUmpY89kUgQVn3w8f04gfdzNGLUJnzGQF1SKpNRi25jN.png" width="600">
 
 NOTICE: if you are going to reproduce [this notebook](https://github.com/supervisely/supervisely/blob/master/help/jupyterlab_scripts/src/tutorials/09_detection_segmentation_pipeline/detection_segmentation_pipeline.ipynb), just copy/paste inference modes from there. 
 
