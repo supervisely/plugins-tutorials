@@ -38,7 +38,7 @@ Let’s consider semantic segmentation for self-driving car. How to label object
 ## Objects matching
 
 1. Render all objects of all classes to get effective masks (it means that objects masks will be without intersections after rendering, i.e. each pixel belongs to only a one object/class). See example illustration above (when opacity equals to 1) 
-2. Every object, that was created by labeler, is compared against all objects of the same class on the same image in benchmark project. For every comparing pair of objects we calculate IoU (find more intuition and theory about IoU metric [here](https://supervise.ly/explore/plugins/m-io-u-69819/overview)) and choose the pair with the maximum value. If the maximum IoU value is less then 0.8 the matching pair is skipped (it means that labeled object was not matched).  
+2. Every object, that was created by labeler, is compared against all objects of the same class on the same image in benchmark project. For every comparing pair of objects we calculate IoU (find more intuition and theory about IoU metric [here](https://supervisely.com/explore/plugins/m-io-u-69819/overview)) and choose the pair with the maximum value. If the maximum IoU value is less then 0.8 the matching pair is skipped (it means that labeled object was not matched).  
 
 As a result we find both matched and don't matched objects according to IoU threshold. 
 
@@ -78,7 +78,7 @@ For every class (! not for every object instance !) we firstly render the effect
 
 Intuition is the following: for every image we can calculate Pixel Accuracy. Pixel Accuracy = 1 - Pixel Error. Pixel error is a fraction of how many pixels we labeled with errors and the total number of pixels.   
 
-- Intersection over Union - explanation is [here](https://supervise.ly/explore/plugins/m-io-u-69819/overview)
+- Intersection over Union - explanation is [here](https://supervisely.com/explore/plugins/m-io-u-69819/overview)
 
 **Geometry Score** is the average of all IoU of classes. The title of the column that is used for averaging is marked in bold.
 
